@@ -1,0 +1,7 @@
+{
+    "name": "hppcoin",
+    "symbol": "hpp",
+    "algorithm": "lyra2h",
+    "peerMagic": "e3d9fef1",
+    "peerMagicTestnet": "08000000"
+}

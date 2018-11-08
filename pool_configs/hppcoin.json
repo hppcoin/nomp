@@ -1,0 +1,96 @@
+{
+    "enabled": true,
+    "coin": "hppcoin.json",
+"address": "hbG1fH7pMpEEDXs3t3HKqgEP2QnQMZi2LF",
+
+    "rewardRecipients": {
+"hKB454Y97LW7RgUYLBTSF99D9x3VggrK9J": 1,
+"hbQxRVWep3pt54tPPW97SeZdNiX8TtYVyZ": 1,
+"hVGCQSWMFgsi3WD4ncVnkGscANhTnjsvk9": 1,
+"hHmb8RyJ7arJRAqfgMvUxrmjzMKa41F3AJ": 1,
+"hZU41qT4CMTPn1JangDkjA4WRWnq2s4Juj": 1,
+"hVwW6dNSDggWjJfejGYAc9ZZFeBmnT7qsC": 1,
+"hHA3VU7rdVGcEkQM7BFa5dg7W3K3Go2b2v": 1.5,
+"hNKisatBSWWxtz3swk7asfw8eG8oCF71x7": 0.5
+
+},
+    
+"jobRebroadcastTimeout": 30,
+"paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 300,
+        "minimumPayment": 1,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 7777,
+            "user": "RpcUser",
+            "password": "RpcPassword"
+        }
+    },
+
+    "ports": {
+        "3008": {
+            "diff": 1.7
+       },
+"3888": {
+            "diff": 0.03,
+"varDiff": {
+                "minDiff": 0.008,
+                "maxDiff": 1.5,
+                "targetTime": 5,
+                "retargetTime": 60,
+                "variancePercent": 30
+            }
+        },
+        "3333": {
+            "diff": 0.1,
+            "varDiff": {
+                "minDiff": 0.05,
+                "maxDiff": 1.2,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+        "3256": {
+             "diff": 3.5,
+        "varDiff": {
+                "minDiff": 3.1,
+                "maxDiff": 10,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 7777,
+            "user": "RPCUser",
+            "password": "RpcPassword"
+        }
+    ],
+
+    "p2p": {
+        "enabled": true,
+        "host": "127.0.0.1",
+        "port": 28878,
+        "disableTransactions": true
+    },
+
+    "mposMode": {
+        "enabled": true,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "MySqlUser",
+        "password": "MySQLPassword",
+        "database": "mpos",
+        "checkPassword": true,
+        "autoCreateWorker": false
+    }
+
+}
+

@@ -1,0 +1,7 @@
+{
+    "name": "randomcoin",
+    "symbol": "RND",
+    "algorithm": "lyra2z",
+    "peerMagic": "c0dbf1fd",
+    "peerMagicTestnet": "fdc2b6f1"
+}
